@@ -3,7 +3,7 @@ node {
 
     stage('Clone repository') {
         /* Cloning the Repository to our Workspace */
-        git 'https://github.com/self-tuts/Nodejs-application-with-docker.git'
+        git 'https://github.com/shubh4527/pseudo.git'
     }
 
     stage('Build image') {
