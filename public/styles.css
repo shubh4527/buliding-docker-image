@@ -68,7 +68,7 @@ body {
 }
 
 #home{
-    background: url('/nodeApp/img/home-bg-2.jpg');
+   background: url('https://shubh4527bucket.s3.us-east-2.amazonaws.com/img/home-bg-2.jpg');
     /* background-size: cover; */
     height: 100vh; 
     /* margin-left: 0;
@@ -262,7 +262,7 @@ body {
     background: black;
 }
 #contact{
-        background: url('/nodeApp/img/home-bg-2.jpg');
+        background: url('https://shubh4527bucket.s3.us-east-2.amazonaws.com/img/home-bg-2.jpg');
         /* background-size: cover;
         height: 100vh;  */
         margin-left: 0;

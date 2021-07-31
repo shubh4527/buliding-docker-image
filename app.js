@@ -1,11 +1,14 @@
-const express = require('express');
-const app = express();
-const port = 8080;
+var express = require("express");
 
-app.get('/', (req, res) => {
-  res.sendFile('index.html', {root: __dirname });
-})
+var app = express();
 
-app.listen(port, () => {
-  console.log(`Example app listening at :${port}`);
-})
+app.use(express.static('public'));
+app.use(express.static('img'));
+//make way for some custom css, js and images
+app.use('/public', express.static(__dirname + '/public'));
+app.use('/img', express.static(__dirname + '/img'));
+app.use('shubham.jpg', express.static(__dirname + '/img'));
+var server = app.listen(9005, function(){
+    var port = server.address().port;
+    console.log("Server started at http://localhost:%s", port);
+});
