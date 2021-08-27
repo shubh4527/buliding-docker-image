@@ -1,6 +1,6 @@
 node {
     def app
-
+     //checking poll scm
     stage('Clone repository') {
         /* Cloning the Repository to our Workspace */
         git 'https://github.com/shubh4527/pseudo.git'
